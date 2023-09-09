@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="/returnBook" method="post" >
+    <table>
+        <label>Mời bạn nhập vào</label>
+        <input type="text" name="codeOder">
+<!--       name là phân biệt ,khi gửi lên controller thì sẽ bắt name -->
+        <input type="text" name="idBook" th:value="${idBook}">
+<!--       ô input có sẵn giá trị-->
+        <input type="submit">
+    </table>
+</form>
+</body>
+</html>
